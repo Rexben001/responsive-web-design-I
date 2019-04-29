@@ -71,13 +71,13 @@ header{
 	width: 100%;
 	background: rgb(235, 232, 232);
 	position: sticky; 
-	top: 0;
-	z-index: 100;
-	display: flex;
-	justify-content: space-around;
 	padding: 20px;
 }
 
+header nav{
+    display: flex;
+	justify-content: space-around;
+}
 
 nav a{
 	text-decoration: none;
@@ -198,4 +198,38 @@ footer{
 display: flex;
 justify-content: center;
 padding-bottom: 30px;
+}
+
+/* Media queries start */
+
+/* Mobile view */
+@media (max-width: 500px){
+
+    header{
+       background-color: white;
+       padding: 0;
+    }
+    header nav {
+       flex-direction: column;
+    }
+    nav a:first-child{
+        margin-left: 0;
+    }
+    nav a{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 10px;
+        align-items: center;
+        order: 1;
+        border-bottom: 1px solid rgb(207, 205, 205);
+    }
+    nav img{
+        height: 45px;
+        width: 90px;
+        border-bottom: 1px solid rgb(207, 205, 205);
+        padding: 10px 0;
+        align-items: center;
+    }
+    
 }
