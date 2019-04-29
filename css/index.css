@@ -248,7 +248,7 @@ padding-bottom: 30px;
     nav a:first-child{
         margin-left: 0;
     }
-    nav a{
+    nav ul a{
         display: flex;
         flex-direction: column;
         margin: 0;
