@@ -69,8 +69,6 @@ h1, h2, h3, h4, h5 {
 
 header{
 	width: 100%;
-	background: rgb(235, 232, 232);
-    /* padding: 20px; */
 }
 
 header nav{
@@ -78,16 +76,18 @@ header nav{
 	justify-content: space-around;
 }
 
-nav a{
-	text-decoration: none;
-	color: gray;
-	margin: 10px 15px;
-	padding: 15px;
-	vertical-align: middle;
+nav ul{
+    padding: 20px;
+    justify-content: space-around;
+
 }
 
-nav a:first-child{
-	margin-left: 30px;
+a{
+	text-decoration: none;
+	color: gray;
+	margin: 10px 25px;
+	padding: 15px 30px;
+	vertical-align: middle;
 }
 
 nav  a:hover{
@@ -199,6 +199,38 @@ padding-bottom: 30px;
 
 /* Media queries start */
 
+
+/* Tablet view */
+@media (max-width: 800px){
+    nav{
+        flex-direction: column;
+    }
+    nav ul{
+        order: 1;
+        display: flex;
+    }
+    nav ul a{
+        padding: 0 5px;
+    }
+    nav img{
+        margin: 0 auto;
+        align-items: center; 
+        margin-top: 20px;
+    }
+    section{
+        padding: 10px 20px;
+    }
+    .round-image{
+        display: none;
+    }
+    .section_one > div, .section_three > div{
+        padding: 10px;
+    }
+    hr{
+        border-top: 2px black solid; 
+    }
+}
+
 /* Mobile view */
 @media (max-width: 500px){
     body{
@@ -208,8 +240,10 @@ padding-bottom: 30px;
        background-color: white;
        padding: 0;
     }
-    header nav {
+    header nav ul{
        flex-direction: column;
+       justify-content: space-between;
+       padding: 10px 0 0;
     }
     nav a:first-child{
         margin-left: 0;
@@ -230,7 +264,7 @@ padding-bottom: 30px;
     nav img{
         width: 30%;
         margin: auto;
-        padding: 10px 0;
+        padding: 10px 0 0;
         align-items: center;
     }
     hr{
@@ -255,3 +289,4 @@ padding-bottom: 30px;
         margin-top: 20px;
     }
 }
+
