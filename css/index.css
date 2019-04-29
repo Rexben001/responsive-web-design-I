@@ -135,7 +135,7 @@ section{
 .innovation button{
 	padding: 10px 20px;
 	font-size: 20px;
-	border-radius: 30px;
+	border-radius: 5px;
 }
 
 .innovation button:hover{
